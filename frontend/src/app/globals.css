@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg-primary: #0a0e17;
+  --bg-secondary: #111827;
+  --bg-card: #1a1f2e;
+  --accent-cyan: #00ffff;
+  --accent-blue: #00aaff;
+  --accent-green: #00ff88;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-primary);
+  color: #e2e8f0;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #374151;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4b5563;
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-bg-card border border-border-dark rounded-lg backdrop-blur-sm;
+    background: linear-gradient(135deg, rgba(26,31,46,0.9) 0%, rgba(17,24,39,0.9) 100%);
+  }
+
+  .glass-card-elevated {
+    @apply bg-bg-elevated border border-border-medium rounded-xl backdrop-blur-md;
+    background: linear-gradient(135deg, rgba(30,38,64,0.95) 0%, rgba(26,31,46,0.95) 100%);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.3), 0 0 1px rgba(0,255,255,0.1);
+  }
+
+  .neon-text {
+    text-shadow: 0 0 10px currentColor, 0 0 20px currentColor;
+  }
+
+  .neon-border {
+    box-shadow: 0 0 5px currentColor, inset 0 0 5px currentColor;
+  }
+
+  .graph-container {
+    background: radial-gradient(circle at 50% 50%, #0f1729 0%, #0a0e17 100%);
+  }
+
+  .gradient-text-cyan {
+    background: linear-gradient(135deg, #00ffff, #00aaff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-text-danger {
+    background: linear-gradient(135deg, #ff4444, #ff0066);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .status-pulse-running {
+    animation: statusPulse 2s ease-in-out infinite;
+  }
+
+  .status-pulse-paused {
+    animation: pausedBlink 1.5s ease-in-out infinite;
+  }
+
+  .progress-glow {
+    box-shadow: 0 0 8px currentColor, 0 0 16px currentColor;
+  }
+
+  .card-hover-lift {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .card-hover-lift:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3), 0 0 1px rgba(0,255,255,0.15);
+  }
+}
+
+@keyframes statusPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+@keyframes pausedBlink {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 rgba(255,255,0,0); }
+  50% { opacity: 0.7; box-shadow: 0 0 12px rgba(255,255,0,0.3); }
+}

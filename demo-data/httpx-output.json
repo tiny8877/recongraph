@@ -1,0 +1,51 @@
+{"host":"www.target.com","status_code":200,"title":"Target Corp - Home","content_length":45230,"tech":["Nginx","React","Node.js"],"host_ip":"104.21.55.12"}
+{"host":"api.target.com","status_code":200,"title":"API Gateway","content_length":128,"tech":["Nginx","Express","Node.js"],"host_ip":"104.21.55.13"}
+{"host":"dev.target.com","status_code":200,"title":"Development Server","content_length":8900,"tech":["Apache","PHP 8.1","Laravel"],"host_ip":"104.21.55.14"}
+{"host":"staging.target.com","status_code":200,"title":"Staging Environment","content_length":44100,"tech":["Nginx","React","Node.js"],"host_ip":"104.21.55.15"}
+{"host":"admin.target.com","status_code":403,"title":"403 Forbidden","content_length":162,"tech":["Nginx"],"host_ip":"104.21.55.16"}
+{"host":"portal.target.com","status_code":200,"title":"Customer Portal","content_length":32400,"tech":["Apache","PHP 7.4","WordPress"],"host_ip":"104.21.55.17"}
+{"host":"mail.target.com","status_code":200,"title":"Roundcube Webmail","content_length":15600,"tech":["Nginx","PHP 8.0","Roundcube"],"host_ip":"104.21.55.18"}
+{"host":"vpn.target.com","status_code":200,"title":"Global Protect VPN","content_length":5400,"tech":["PaloAlto GlobalProtect"],"host_ip":"104.21.55.19"}
+{"host":"cdn.target.com","status_code":200,"title":"CDN","content_length":0,"tech":["CloudFront","Amazon S3"],"host_ip":"13.225.100.1"}
+{"host":"blog.target.com","status_code":200,"title":"Target Blog - Latest News","content_length":67800,"tech":["Nginx","WordPress 6.4","PHP 8.2","MySQL"],"host_ip":"104.21.55.20"}
+{"host":"docs.target.com","status_code":200,"title":"Documentation","content_length":23400,"tech":["Nginx","Docusaurus","React"],"host_ip":"104.21.55.21"}
+{"host":"help.target.com","status_code":200,"title":"Help Center","content_length":34500,"tech":["Nginx","Zendesk"],"host_ip":"104.21.55.22"}
+{"host":"support.target.com","status_code":200,"title":"Support Tickets","content_length":28700,"tech":["Nginx","Freshdesk"],"host_ip":"104.21.55.23"}
+{"host":"status.target.com","status_code":200,"title":"System Status","content_length":12300,"tech":["Statuspage","Atlassian"],"host_ip":"104.21.55.24"}
+{"host":"grafana.target.com","status_code":200,"title":"Grafana","content_length":18900,"tech":["Nginx","Grafana 10.2"],"host_ip":"10.0.1.50"}
+{"host":"kibana.target.com","status_code":200,"title":"Kibana","content_length":21000,"tech":["Nginx","Kibana 8.11","Elasticsearch"],"host_ip":"10.0.1.51"}
+{"host":"jenkins.target.com","status_code":200,"title":"Jenkins Dashboard","content_length":15400,"tech":["Jetty","Jenkins 2.426"],"host_ip":"10.0.1.52"}
+{"host":"gitlab.target.com","status_code":200,"title":"GitLab","content_length":42000,"tech":["Nginx","GitLab 16.7","Ruby on Rails"],"host_ip":"10.0.1.53"}
+{"host":"jira.target.com","status_code":200,"title":"Jira - Project Management","content_length":56000,"tech":["Nginx","Jira 9.12","Atlassian"],"host_ip":"10.0.1.54"}
+{"host":"sso.target.com","status_code":200,"title":"Single Sign-On","content_length":8900,"tech":["Nginx","Keycloak 23.0"],"host_ip":"104.21.55.25"}
+{"host":"auth.target.com","status_code":200,"title":"Authentication Service","content_length":4500,"tech":["Nginx","Node.js","Express"],"host_ip":"104.21.55.26"}
+{"host":"login.target.com","status_code":200,"title":"Login - Target Corp","content_length":12800,"tech":["Nginx","React","Node.js"],"host_ip":"104.21.55.27"}
+{"host":"app.target.com","status_code":200,"title":"Target App","content_length":89000,"tech":["Nginx","React","Next.js","Node.js"],"host_ip":"104.21.55.28"}
+{"host":"dashboard.target.com","status_code":200,"title":"Dashboard","content_length":45600,"tech":["Nginx","Vue.js","Python","Django"],"host_ip":"104.21.55.29"}
+{"host":"checkout.target.com","status_code":200,"title":"Secure Checkout","content_length":23400,"tech":["Nginx","React","Stripe"],"host_ip":"104.21.55.30"}
+{"host":"billing.target.com","status_code":200,"title":"Billing Portal","content_length":18700,"tech":["Nginx","Angular","Node.js"],"host_ip":"104.21.55.31"}
+{"host":"shop.target.com","status_code":200,"title":"Target Shop","content_length":112000,"tech":["Nginx","Magento 2.4","PHP 8.1","MySQL","Redis","Elasticsearch"],"host_ip":"104.21.55.32"}
+{"host":"mobile.target.com","status_code":200,"title":"Mobile API","content_length":256,"tech":["Nginx","Node.js","Express"],"host_ip":"104.21.55.33"}
+{"host":"upload.target.com","status_code":200,"title":"File Upload Service","content_length":6700,"tech":["Nginx","Python","Flask"],"host_ip":"104.21.55.34"}
+{"host":"download.target.com","status_code":200,"title":"Downloads","content_length":15800,"tech":["Apache","PHP 7.4"],"host_ip":"104.21.55.35"}
+{"host":"search.target.com","status_code":200,"title":"Search","content_length":9800,"tech":["Nginx","Elasticsearch","React"],"host_ip":"104.21.55.36"}
+{"host":"internal.target.com","status_code":403,"title":"403 Forbidden","content_length":162,"tech":["Nginx"],"host_ip":"10.0.1.100"}
+{"host":"webhooks.target.com","status_code":200,"title":"Webhook Manager","content_length":3400,"tech":["Nginx","Go"],"host_ip":"104.21.55.37"}
+{"host":"files.target.com","status_code":200,"title":"File Manager","content_length":22100,"tech":["Apache","PHP 7.4","FileManager"],"host_ip":"104.21.55.38"}
+{"host":"storage.target.com","status_code":200,"title":"Object Storage","content_length":512,"tech":["MinIO","Nginx"],"host_ip":"104.21.55.39"}
+{"host":"analytics.target.com","status_code":200,"title":"Analytics Dashboard","content_length":34500,"tech":["Nginx","Matomo","PHP 8.2"],"host_ip":"104.21.55.40"}
+{"host":"feature.target.com","status_code":200,"title":"Feature Flags","content_length":5600,"tech":["Nginx","LaunchDarkly","Node.js"],"host_ip":"104.21.55.41"}
+{"host":"oauth.target.com","status_code":200,"title":"OAuth Provider","content_length":7800,"tech":["Nginx","Node.js","Passport.js"],"host_ip":"104.21.55.42"}
+{"host":"test.target.com","status_code":200,"title":"Test Environment","content_length":44000,"tech":["Apache","PHP 8.1","Laravel","MySQL","Redis"],"host_ip":"10.0.2.10"}
+{"host":"qa.target.com","status_code":200,"title":"QA Environment","content_length":44000,"tech":["Apache","PHP 8.1","Laravel","MySQL"],"host_ip":"10.0.2.11"}
+{"host":"sandbox.target.com","status_code":200,"title":"Sandbox","content_length":12000,"tech":["Nginx","Python","Django"],"host_ip":"10.0.2.12"}
+{"host":"demo.target.com","status_code":200,"title":"Product Demo","content_length":56000,"tech":["Nginx","React","Node.js"],"host_ip":"104.21.55.43"}
+{"host":"beta.target.com","status_code":200,"title":"Beta Program","content_length":67000,"tech":["Nginx","React","Next.js"],"host_ip":"104.21.55.44"}
+{"host":"vault.target.com","status_code":200,"title":"HashiCorp Vault","content_length":9800,"tech":["Vault 1.15"],"host_ip":"10.0.1.60"}
+{"host":"config.target.com","status_code":200,"title":"Config Server","content_length":3400,"tech":["Spring Cloud Config","Java"],"host_ip":"10.0.1.61"}
+{"host":"legacy.target.com","status_code":200,"title":"Legacy Portal","content_length":89000,"tech":["IIS 10.0","ASP.NET","jQuery 1.8"],"host_ip":"104.21.55.45"}
+{"host":"old.target.com","status_code":301,"title":"Redirect","content_length":0,"tech":["Nginx"],"host_ip":"104.21.55.46"}
+{"host":"ftp.target.com","status_code":200,"title":"FTP Server","content_length":2300,"tech":["vsftpd 3.0"],"host_ip":"104.21.55.47"}
+{"host":"db.target.com","status_code":403,"title":"403 Forbidden","content_length":162,"tech":["Nginx"],"host_ip":"10.0.1.70"}
+{"host":"elastic.target.com","status_code":200,"title":"Elasticsearch","content_length":456,"tech":["Elasticsearch 8.11"],"host_ip":"10.0.1.71"}
+{"host":"redis.target.com","status_code":403,"title":"403 Forbidden","content_length":0,"tech":[],"host_ip":"10.0.1.72"}

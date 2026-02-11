@@ -1,0 +1,56 @@
+admin.example.com
+api.example.com
+dev.example.com
+staging.example.com
+portal.example.com
+mail.example.com
+vpn.example.com
+cdn.example.com
+blog.example.com
+shop.example.com
+sso.example.com
+internal.example.com
+test.example.com
+dashboard.example.com
+mobile.example.com
+https://api.example.com/v1/users?id=1&user_id=100
+https://api.example.com/v1/users?id=2&role=admin
+https://api.example.com/v1/search?q=test&query=laptop
+https://api.example.com/v1/export?format=csv&table=users&select=*
+https://shop.example.com/product?id=1&category=electronics&sort=price
+https://shop.example.com/cart?item=1&price=0.01&order_id=ORD-001
+https://blog.example.com/post?title=hello&comment=nice&name=test
+https://blog.example.com/preview?html=<script>&content=test&callback=func
+https://portal.example.com/redirect?url=https://evil.com&next=/home
+https://portal.example.com/login?redirect=https://phish.com&return=/dash
+https://portal.example.com/sso?redirect_uri=https://attacker.com&goto=/admin
+https://admin.example.com/tools?cmd=whoami&exec=id&run=true
+https://admin.example.com/debug?command=ls&func=phpinfo&action=execute
+https://dev.example.com/test?code=print('hi')&module=system&payload=base64
+https://internal.example.com/proxy?url=http://169.254.169.254&src=http://10.0.0.1
+https://internal.example.com/fetch?host=http://localhost:6379&endpoint=http://admin:8080
+https://internal.example.com/api?feed=http://metadata&domain=http://consul:8500
+https://download.example.com/file?path=../../etc/passwd&file=config.yml
+https://download.example.com/get?include=../wp-config.php&template=main
+https://download.example.com/view?page=../../etc/shadow&content=secret&dir=uploads
+https://files.example.com/doc?document=secret.pdf&download=backup.sql
+https://mobile.example.com/api?user_id=100&token=abc123&session=xyz&account=premium
+https://mobile.example.com/profile?uid=admin&profile=full&key=api_key
+https://checkout.example.com/pay?order_id=ORD-999&customer_id=C-500&invoice=INV-100
+https://billing.example.com/receipt?member_id=M-100&file_id=F-001&pid=500
+{"host":"api.example.com","status_code":200,"title":"API Gateway","content_length":256,"tech":["Nginx","Express","Node.js"],"host_ip":"104.21.55.10"}
+{"host":"admin.example.com","status_code":403,"title":"403 Forbidden","content_length":162,"tech":["Nginx"],"host_ip":"104.21.55.11"}
+{"host":"blog.example.com","status_code":200,"title":"Blog - WordPress","content_length":67800,"tech":["Nginx","WordPress 6.4","PHP 8.2","MySQL"],"host_ip":"104.21.55.12"}
+{"host":"shop.example.com","status_code":200,"title":"Online Shop","content_length":112000,"tech":["Nginx","Magento 2.4","PHP 8.1","Redis"],"host_ip":"104.21.55.13"}
+{"host":"internal.example.com","status_code":403,"title":"Forbidden","content_length":0,"tech":["Nginx"],"host_ip":"10.0.1.100"}
+{"host":"dev.example.com","status_code":200,"title":"Dev Server","content_length":8900,"tech":["Apache","PHP 8.1","Laravel","Xdebug"],"host_ip":"10.0.2.10"}
+{"host":"vpn.example.com","status_code":200,"title":"GlobalProtect VPN","content_length":5400,"tech":["PaloAlto"],"host_ip":"104.21.55.14"}
+{"host":"dashboard.example.com","status_code":200,"title":"Dashboard","content_length":45000,"tech":["Nginx","React","Next.js"],"host_ip":"104.21.55.15"}
+{"template-id":"CVE-2024-3400","info":{"name":"PAN-OS Command Injection","severity":"critical","description":"Command injection in Palo Alto GlobalProtect."},"matched-at":"https://vpn.example.com/ssl-vpn/hipreport.esp"}
+{"template-id":"git-config-exposure","info":{"name":"Git Config Exposed","severity":"high","description":"Git configuration is publicly accessible."},"matched-at":"https://dev.example.com/.git/config"}
+{"template-id":"env-file-exposure","info":{"name":".env File Exposed","severity":"high","description":"Environment file with credentials exposed."},"matched-at":"https://dev.example.com/.env"}
+{"template-id":"wordpress-xmlrpc","info":{"name":"WordPress XML-RPC Enabled","severity":"medium","description":"XML-RPC interface enabled."},"matched-at":"https://blog.example.com/xmlrpc.php"}
+{"template-id":"open-redirect","info":{"name":"Open Redirect","severity":"medium","description":"Open redirect via URL parameter."},"matched-at":"https://portal.example.com/redirect?url=https://evil.com"}
+{"template-id":"xss-reflected","info":{"name":"Reflected XSS","severity":"medium","description":"Reflected XSS in search parameter."},"matched-at":"https://api.example.com/v1/search?q=<script>alert(1)</script>"}
+{"template-id":"ssrf-detected","info":{"name":"SSRF via Proxy","severity":"high","description":"Server-side request forgery via proxy endpoint."},"matched-at":"https://internal.example.com/proxy?url=http://169.254.169.254"}
+{"template-id":"exposed-admin","info":{"name":"Admin Panel Exposed","severity":"low","description":"Admin panel accessible."},"matched-at":"https://admin.example.com/"}
